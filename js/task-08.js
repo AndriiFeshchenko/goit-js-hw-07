@@ -25,20 +25,11 @@ const createBoxes = amount => {
   containerEl.append(...listObj);
 };
 
-//use fragment
-// const createBoxes = amount => {
-//   const fragmentObj = document.createDocumentFragment();
-//   for (let i = 0; i < amount; i += 1) {
-//     fragmentObj.appendChild(boxGenerator(i));
-//   }
-//   containerEl.appendChild(fragmentObj);
-// };
+
 
 const destroyBoxes = () => {
   containerEl.innerHTML = '';
-  //while (containerEl.firstChild) {
-  //  containerEl.removeChild(containerEl.firstChild);
-  //}
+  
 };
 
 const render = function () {

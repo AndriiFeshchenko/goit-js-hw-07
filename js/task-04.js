@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   counterValue = Number(captionEl.textContent);
 });
 
-// Общий случай
+
 const increment = () => {
   counterValue += 1;
   captionEl.textContent = counterValue;

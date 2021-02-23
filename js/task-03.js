@@ -16,7 +16,7 @@ const images = [
   },
 ];
 
-//use insertAdjacentHTML
+
 const galleryRef = document.querySelector('#gallery');
 
 const template = images.reduce((item, { url, alt }) => {
@@ -27,19 +27,3 @@ const template = images.reduce((item, { url, alt }) => {
 
 galleryRef.insertAdjacentHTML('afterbegin', template);
 
-//use createElement and append
-// const galleryRef = document.querySelector('#gallery');
-
-// const createGalleryCard = ({ url, alt }) => {
-//   const imgTagObj = document.createElement('img');
-//   [imgTagObj.src, imgTagObj.alt] = [url, alt];
-//   imgTagObj.classList.add('gallery__image');
-
-//   const liTagObj = document.createElement('li');
-//   liTagObj.classList.add('gallery__card');
-
-//   liTagObj.appendChild(imgTagObj);
-//   return liTagObj;
-// };
-// const template = images.map(createGalleryCard);
-// galleryRef.append(...template);

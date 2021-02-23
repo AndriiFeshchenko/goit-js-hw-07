@@ -1,5 +1,5 @@
 const editEl = document.querySelector('input#validation-input');
-//editEl.classList.add('invalid');
+
 
 const onFocusOutHandler = function (event) {
   const textLength = this.value.length;

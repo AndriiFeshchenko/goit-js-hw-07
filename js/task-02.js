@@ -7,7 +7,7 @@ const ingredients = [
   'Приправы',
 ];
 
-//use append (... )
+
 const placeHolderEl = document.querySelector('#ingredients');
 
 const listItemRefs = ingredients.map(ingredient => {
@@ -18,14 +18,3 @@ const listItemRefs = ingredients.map(ingredient => {
 
 placeHolderEl.append(...listItemRefs);
 
-//use fragment
-// const placeHolderEl = document.querySelector('#ingredients');
-// const fragmentObj = document.createDocumentFragment();
-
-// ingredients.forEach(ingredient => {
-//   const itemObj = document.createElement('li');
-//   itemObj.textContent = ingredient;
-//   fragmentObj.appendChild(itemObj);
-// });
-
-// placeHolderEl.appendChild(fragmentObj);

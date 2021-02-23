@@ -5,16 +5,7 @@ for (const category of categoriesEl) {
   const title = category.querySelector('h2').textContent.trim();
   const elementsCount = category.querySelectorAll('li').length;
   console.log(
-    `\n\u2022 Категория: ${title}\n\u2022 Количество элементов: ${elementsCount}`,
+    ` Категория: ${title}, Количество элементов: ${elementsCount}`,
   );
 }
 
-//use rest, map
-
-// [...categoriesEl].map((category) => {
-//   const title = category.querySelector("h2").textContent.trim();
-//   const elementsCount = category.querySelectorAll("li").length;
-//   console.log(
-//     `\n\u2022 Категория: ${title}\n\u2022 Количество элементов: ${elementsCount}`
-//   );
-// });

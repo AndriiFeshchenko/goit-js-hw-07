@@ -1,9 +1,8 @@
-const editEl = document.querySelector('input#validation-input');
-
+const editElement = document.querySelector('input#validation-input');
 
 const onFocusOutHandler = function (event) {
-  const textLength = this.value.length;
-  const limit = this.dataset.length;
+  const textLength = Number(this.value.length);
+  const limit = Number(this.dataset.length);
   if (textLength < limit) {
     this.classList.add('invalid');
     this.classList.remove('valid');
@@ -13,4 +12,4 @@ const onFocusOutHandler = function (event) {
   }
 };
 
-editEl.addEventListener('blur', onFocusOutHandler);
+editElement.addEventListener('blur', onFocusOutHandler);
